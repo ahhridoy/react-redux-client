@@ -1,8 +1,8 @@
 import "./App.css";
 import Header from "./components/Header";
-import ProductComponent from "./components/ProductComponent";
 import ProductDetails from "./components/ProductDetails";
 import ProductList from "./components/ProductList";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {

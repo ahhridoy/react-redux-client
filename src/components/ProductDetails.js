@@ -11,14 +11,14 @@ const ProductDetails = () => {
   const { productId } = useParams();
   let product = useSelector((state) => state.product);
 
-  const { image, title, price, category, description } = product;
+  const { image, title, price, description } = product;
   const dispatch = useDispatch();
 
-  const fetchProductDetail = async (id) => {
+  const fetchProductDetail = async (_id) => {
     const response = await axios
-      .get(`https://fakestoreapi.com/products/${id}`)
+      .get(`https://powerful-ravine-92991.herokuapp.com/products/${_id}`)
       .catch((err) => {
-        console.log("Err: ", err);
+        // console.log("Err: ", err);
       });
     dispatch(selectedProduct(response.data));
   };
@@ -28,7 +28,7 @@ const ProductDetails = () => {
     return () => {
       dispatch(removeSelectedProduct());
     };
-  }, [productId]);
+  }, []);
   
   return (
     <div className="ui grid container">
@@ -40,14 +40,14 @@ const ProductDetails = () => {
             <div className="ui vertical divider">AND</div>
             <div className="middle aligned row">
               <div className="column lp">
-                <img className="ui fluid image" src={image} />
+                <img className="ui fluid image" src={image} alt=""/>
               </div>
               <div className="column rp">
                 <h1>{title}</h1>
                 <h2>
-                  <a className="ui teal tag label">${price}</a>
+                  <p className="ui teal tag label">${price}</p>
                 </h2>
-                <h3 className="ui brown block header">{category}</h3>
+                {/* <h3 className="ui brown block header">{category}</h3> */}
                 <p>{description}</p>
                 <div className="ui vertical animated button" tabIndex="0">
                   <div className="hidden content">
