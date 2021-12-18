@@ -25,14 +25,14 @@ const ProductList = () => {
 
     // console.log("Products :", products);
     return (
-        <>
+        <div id="home">
             <Banner></Banner>
             <Container>
                 <Row>
                     <ProductComponent />
                 </Row>
             </Container>
-        </>
+        </div>
     );
 };
 
