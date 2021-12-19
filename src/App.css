@@ -93,5 +93,24 @@
 }
 
 .App {
-  background-color: rgb(226, 226, 252);
+    background-color: rgb(226, 226, 252);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-area {
+    background-image: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 480px;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-area {
+        height: 180px;
+    }
 }

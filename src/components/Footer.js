@@ -3,12 +3,12 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const Footer = () => {
     return (
-        <div className="bg-dark pb-5 pt-4 mt-5">
+        <div className="bg-dark pb-5 pt-5 mt-5">
             <Container>
                 <Row>
                     <Col md={6}>
-                        <h2 className="text-light">Camera Shop</h2> <br />{" "}
-                        <br /> <br />
+                        <h3 className="text-light">Camera Shop</h3> <br />{" "}
+                        <br />
                         <small className="text-light small-text">
                             {" "}
                             Copyright 2021 Camera Shop.

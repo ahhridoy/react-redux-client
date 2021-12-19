@@ -8,7 +8,7 @@ const Login = () => {
     return (
         <Container className="my-5">
             <Row>
-                <Col md={6} xs={12}>
+                <Col md={8} xs={12}>
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
@@ -39,7 +39,7 @@ const Login = () => {
                         </Button>
                     </Form>
                 </Col>
-                <Col md={6} xs={12}>
+                <Col md={4} xs={12}>
                     <img src={login} alt="" />
                 </Col>
             </Row>
