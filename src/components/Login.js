@@ -40,7 +40,7 @@ const Login = () => {
                     </Form>
                 </Col>
                 <Col md={4} xs={12}>
-                    <img src={login} alt="" />
+                    <img src={login} alt="" style={{width: "100%"}}/>
                 </Col>
             </Row>
         </Container>
