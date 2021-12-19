@@ -9,7 +9,7 @@ const OfferSection = () => {
             <Row>
                 <Col md={4} xs={12}>
                     {/* <div className="p-3 bg-light text-center"> */}
-                    <img src={side_banner} alt="side-banner" />
+                    <img src={side_banner} alt="side-banner" style={{width: "100%"}} />
                     {/* </div> */}
                 </Col>
                 <Col md={8} xs={12} className="mt-4">
