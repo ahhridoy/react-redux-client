@@ -5,7 +5,7 @@ const banner = {
     background: `url(${bg})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "contain",
-    height: "800px",
+    height: "480px",
 };
 
 

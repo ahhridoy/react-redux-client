@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import ProductComponent from "./ProductComponent";
 import { setProducts } from "../redux/actions/productActions";
 import Banner from "./Banner";
 import { Container, Row } from "react-bootstrap";
+import SearchInput from "./SearchInput";
 
 const ProductList = () => {
-    // const products = useSelector((state) => state.allProducts.products);
+
     const dispatch = useDispatch();
     const fetchProducts = async () => {
         const response = await axios
@@ -27,6 +28,7 @@ const ProductList = () => {
     return (
         <div id="home">
             <Banner></Banner>
+            <SearchInput></SearchInput>
             <Container>
                 <Row>
                     <ProductComponent />

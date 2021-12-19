@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Col } from "react-bootstrap";
 
-const ProductComponent = () => {
+const AllProducts = () => {
     const products = useSelector((state) => state.allProducts.products);
-    const renderList = products.slice(1, 9).map((product) => {
+    const renderList = products.map((product) => {
         const { _id, title, image, price } = product;
         return (
             <Col md={3} sm={4} xs={12} key={_id}>
@@ -29,4 +29,4 @@ const ProductComponent = () => {
     return <>{renderList}</>;
 };
 
-export default ProductComponent;
+export default AllProducts;
